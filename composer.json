@@ -1,0 +1,31 @@
+{
+    "name": "ZendExperts/ZeSecurity",
+    "type": "library",
+    "description": "ZeSecurity is a Zend Framework 2 module that adds an out of the box security layer for your applications based on PHPIDS(Intrusion Detection System)(https://phpids.org/).",
+    "keywords": ["module", "zf2", "security", "phpids"],
+    "homepage": "https://github.com/ZendExperts/ZeSecurity",
+    "license": "New BSD",
+    "authors": [
+        {
+            "name": "Cosmin Harangus",
+            "homepage": "http://www.zendexperts.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+	"autoload": {
+        "psr-0": {
+            "ZeSecurity": "src/",
+			"IDS_": "vendor/"
+        },
+		"classmap":[
+            "./"
+        ]
+    },
+	"extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

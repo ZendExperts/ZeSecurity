@@ -54,6 +54,8 @@ class Monitor
     public function initMonitor()
     {
         try {
+            require_once('IDS/Init.php');
+            require_once('IDS/Monitor.php');
             $init = IDS_Init::init();
             $init->setConfig($this->config['options']);
             $request = $this->getRequest();

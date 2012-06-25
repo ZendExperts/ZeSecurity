@@ -12,17 +12,34 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "phpids/phpids": "0.7.0"
+    },
+    "repositories":{
+        "type":"package",
+        "package":{
+            "name":"phpids/phpids",
+            "version":"0.7.0",
+            "dist":{
+                "url":"https://phpids.org/files/phpids-0.7.zip",
+                "type":"zip"
+            },
+            "source":{
+                "url":"https://svn.itratos.de/svn/php-ids/",
+                "type":"svn",
+                "reference":"trunk/"
+            }
+        }
     },
 	"autoload": {
         "psr-0": {
-            "ZeSecurity": "src/",
-			"IDS_": "vendor/"
+            "ZeSecurity": "src/"
         },
 		"classmap":[
             "./"
         ]
     },
+    "include-path":["vendor/phpids/phpids/lib/"],
 	"extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"

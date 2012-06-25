@@ -11,27 +11,29 @@
             "homepage": "http://www.zendexperts.com"
         }
     ],
-    "require": {
-        "php": ">=5.3.3",
-        "phpids/phpids": "0.7.0"
-    },
-    "repositories":{
-        "type":"package",
-        "package":{
-            "name":"phpids/phpids",
-            "version":"0.7.0",
-            "dist":{
-                "url":"https://phpids.org/files/phpids-0.7.zip",
-                "type":"zip"
-            },
-            "source":{
-                "url":"https://svn.itratos.de/svn/php-ids/",
-                "type":"svn",
-                "reference":"trunk/"
+    "repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"phpids/phpids",
+                "version":"0.7.0",
+                "dist":{
+                    "url":"https://phpids.org/files/phpids-0.7.zip",
+                    "type":"zip"
+                },
+                "source":{
+                    "url":"https://svn.itratos.de/svn/php-ids/",
+                    "type":"svn",
+                    "reference":"trunk/"
+                }
             }
         }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "phpids/phpids": "0.7.x"
     },
-	"autoload": {
+    "autoload": {
         "psr-0": {
             "ZeSecurity": "src/"
         },

@@ -2,7 +2,7 @@
 // define used paths by ZeSecurity IDS
 $ids = array(
     'log'=> __DIR__ . '/../../data/log/ze_security.ids.log',
-    'tmp'=> __DIR__ . '/../../data/tmp/',
+    'tmp'=> '/tmp/',
     'cache'=> __DIR__ . '/../../data/cache/ze_security.ids.cache'
 );
 

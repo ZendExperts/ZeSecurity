@@ -17,7 +17,7 @@ class Redirect extends AbstractAction
         $service = Module::getServiceManager();
         $application = $service->get('Application');
         $response = $application->getResponse();
-        $response->headers()->addHeaderLine('Location', $this->config['url']);
+        $response->getHeaders()->addHeaderLine('Location', $this->config['url']);
         $response->setStatusCode(302);
         return true;
     }

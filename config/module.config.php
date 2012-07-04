@@ -1,4 +1,7 @@
 <?php
+namespace ZeSecurity;
+use ZeSecurity\IDS\Util\Locator;
+
 return array(
     'zendexperts_security' => array(
 		'IDS'=>array(
@@ -25,15 +28,15 @@ return array(
             'options'=>array(
                 'General'=>array(
                     'filter_type'   => 'xml',
-                    'filter_path'   => __DIR__ . '/../vendor/IDS/default_filter.xml',
-                    // 'base_path'     => __DIR__ . '/../vendor/IDS/',
+                    'filter_path'   => Locator::expandFilePath('IDS/default_filter.xml'),
+                    // 'base_path'     => 'IDS/',
                     'use_base_path' => false,
 //                    'tmp_path'      => __DIR__ . '/../../../data/tmp/',
                     'scan_keys'     => false,
                     // in case you want to use a different HTMLPurifier source, specify it here
                     // By default, those files are used that are being shipped with PHPIDS
-                    'HTML_Purifier_Path'    => 'vendors/htmlpurifier/HTMLPurifier.auto.php',
-                    'HTML_Purifier_Cache'   => 'vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Serializer',
+                    'HTML_Purifier_Path'    => Locator::expandFilePath('IDS/vendors/htmlpurifier/HTMLPurifier.auto.php'),
+                    'HTML_Purifier_Cache'   => 'IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Serializer',
                     // define which fields contain html and need preparation before hitting the PHPIDS rules(new in PHPIDS 0.5)
                     'html'          => array(),
                     // define which fields contain JSON data and should be treated as such; for fewer false positives(new in PHPIDS 0.5.3)

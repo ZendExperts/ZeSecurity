@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "ZendExperts/phpids": "0.7.x"
+        "ZendExperts/phpids": "dev-master"
     },
     "autoload": {
         "psr-0": {

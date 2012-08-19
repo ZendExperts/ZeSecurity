@@ -55,7 +55,7 @@ class Module implements AutoloaderProviderInterface
      * Get Service Configuration
      * @return array
      */
-    public function getServiceConfiguration(){
+    public function getServiceConfig(){
         return include __DIR__ . '/config/service.config.php';
     }
 

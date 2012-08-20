@@ -20,7 +20,7 @@ Installation / Usage
 ZeSecurity can be installed using Composer by simply adding the following lines to your composer.json file:
 
     "require": {
-        "ZendExperts/ZeSecurity": "1.0.*"
+        "zendexperts/ze-security": "dev-master"
     }
     
 Then run `php composer.phar update`.
